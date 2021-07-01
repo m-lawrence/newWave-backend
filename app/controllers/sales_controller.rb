@@ -4,15 +4,6 @@ class SalesController < ApplicationController
         render json: sales
     end
 
-    # def show
-    #     review = Review.find(params[:id])
-    #     if review
-    #         render json: review
-    #     else
-    #         render json: { error: "Not found!" }, status: 404
-    #     end
-    # end
-
     def create 
         sale = Sale.create(sale_params)
         render json: sale
